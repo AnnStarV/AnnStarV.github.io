@@ -1,0 +1,546 @@
+h1,h2,h3,h4,h5,h6,p,a{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #fff;
+}
+
+section{
+	width: 320px;
+	height: 729px;
+	background: url("../img/bg_mobile.png") center no-repeat;
+}
+header{
+	padding: 16px;
+	padding-top:17px;
+	padding-bottom: 0px;
+}
+	.header{
+		display: flex;
+		justify-content: space-between;
+	}
+		.logo img{
+			cursor: pointer;
+			height: 23px;
+			width: 77px;
+		}
+
+		#burger{
+			margin-top: 5.5px;
+			cursor: pointer;
+		}
+
+		.menu{
+		position: fixed;
+		display: none;
+		background-color: #2d2d35;
+		width: 320px;
+		top: 0;
+		height: 100vh;
+		z-index: 100;
+		}
+			.menu_header{
+				margin-top: 17.5px;
+				display: flex;
+				justify-content: space-between;
+
+			}
+				.menu_logo{
+					margin-left: 15.2px;
+				}
+				.cancel{
+					margin-right: 16px;
+					margin-top: 6px;
+					cursor: pointer;
+				}
+
+			.menu_order{
+			    text-align: center;
+			    margin-top: 50px;
+
+			}
+			.menu_order button, .header_menu_button{
+				width: 251px;
+				height: 43px;
+				cursor: pointer;
+				background-color: #da6f5b;
+				border-radius: 3px;
+				border: none;
+				color: #fff;
+				font-family: Karla;
+				font-size: 16px;
+				font-weight: 400;
+				transition: all .4s;
+			}
+			.menu_order button:hover, .header_menu_button:hover{
+			transform: scale(1.05);
+		}
+			.menu_nav{
+				list-style-type: none;
+				padding-left: 0;
+				margin-left: 0;
+				margin-top: 57px;
+
+			}
+			li{
+				margin-bottom: 20px;
+			}
+				.nav{
+
+					text-decoration: none;
+					color: #fff !important;
+					font-family: Karla;
+					font-size: 24px;
+					font-weight: 400;
+					line-height: 30px;
+					
+				}
+				.nav:hover{
+				  	border-bottom: solid 1px #FFF;  
+				  	transform: scaleX(0);  
+				  	transition: transform 250ms ease-in-out;
+				}
+	.container{
+		margin-top:36.8px;
+		text-align: center;
+	}
+		.header_title{
+			width: 236px;
+			margin-left: auto;
+    		margin-right: auto;
+		}
+
+				h1{
+					margin: 0;					
+					color: #ffffff;
+					font-family: "Playfair Display";
+					font-size: 35.74px;
+					font-weight: 700;
+					line-height: 1.23;
+				}
+
+		#header_subtitle{
+			overflow: hidden;
+			height: 93px;			
+			width: 272px;
+			margin-left: auto;
+    		margin-right: auto;
+    		margin-top: 16px;
+    		transition: all 0.3s;
+		}
+
+				p{
+					font-family: Karla;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 24px;
+				}
+
+		#arrow_down{
+			margin-top: 13px;
+			width: 17px;
+			margin-left: auto;
+    		margin-right: auto;
+    		cursor: pointer;
+    		transition: all 0.9s;
+		}
+
+.open{
+  height:100% !important;
+}
+.arrow_up{
+    transform: rotate(180deg);
+}
+
+.order_box{
+	width: 288px;
+	height: 318px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.63);
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+	.order_box h3{
+		padding-top: 24px;	
+		text-align: center;
+		color: #ffffff;
+		font-family: "Playfair Display";
+		font-size: 16px;
+		font-weight: 400;
+		margin: 0;
+	}
+
+		#order_box_email{
+			text-align: center;
+			margin-top: 12px;
+		}
+		#order_box_select, .btn_order{
+			text-align: center;
+			margin-top: 17px;
+		}
+
+			input, select{
+				padding: 0px;
+				align-items: center;
+				width: 252px;
+				height: 45px;
+				border-radius: 3px;
+				border: none;
+				color: #ffffff;
+				font-family: Karla;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+			input::-webkit-input-placeholder{
+				color: #ffffff;
+				font-family: Karla;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				padding-left: 20px;
+			}
+
+		.btn_order input{
+			width: 251px;
+			height: 43px;
+			background-color: #da6f5b;
+			color: #ffffff;
+			font-family: Karla;
+			cursor: pointer;s
+			font-size: 16px;
+			font-weight: 400;
+			transition: all 0.4s;
+		}
+		.btn_order input:hover{
+			transform: scale(1.05);
+		}
+
+select 
+{
+	padding-left: 20px;
+	background-color: rgba(255, 255, 255, 0.2) !important;
+
+}
+option{
+	background-color: #303030;
+}
+select.select{
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	background: url("../img/arrow_select.png") center no-repeat;
+  	background-size:
+    8px 4px;
+
+  background-position: 229px 21px;
+}
+.container_quotes{
+	height: 75vh;
+	background-color: #fff;
+	background-image: none;
+}
+	.quotes_title{
+		margin-top: 43px;
+	}
+		.quotes_title h3{
+			font-family: "Playfair Display";
+			font-size: 36px;
+			font-weight: 400;
+			color: #2d2d35;
+			text-align: center;
+		}
+
+#quotes{
+	height: 330px;
+	margin-top: 13px;
+    display: flex;
+}
+	
+	.quotes_el
+	{
+		width: 280px;
+		height: 280px;
+		padding-top: 24px;
+		border-radius: 3px;
+		background-color: #fff;
+		margin: 20px 17px 30px 17px;
+		text-align: center;
+		-webkit-box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 10px -7px rgba(0,0,0,0.75);
+	}
+		.el_text{
+			padding: 0px 20px;
+			min-height: 161px;
+			display: flex;
+			margin-left: auto;
+    		margin-right: auto;
+    		border-bottom: 1.5px solid #f1f5f7;
+    		padding-bottom: 7px;
+		}
+
+
+			.el_text h2{
+				color: #5b5e6b;
+				font-family: Karla;
+				font-style: italic;
+				font-size: 16px;
+				line-height: 24.02px;
+			}
+
+		.el_subtext{
+			margin-top: 8px;
+			color: #2d2d35;
+			font-family: Ovo;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24.02px;
+			padding-bottom: 50px;
+		}
+.single-item
+{
+	background-color: red;
+}
+
+.slick-prev, .slick-next{
+	width: 24px !important;
+	height: 16px !important;
+}
+.header_menu, .header_menu_button{
+	display: none;
+}
+.slick-prev{
+	top: 160px !important;
+	left: 6px !important;
+	z-index: 2 !important;
+}
+.slick-next{
+	top: 160px !important;
+	right: 6px !important;
+	z-index: 2 !important;
+}
+.quotes_number{
+	position: relative;
+	bottom: 6px;
+	color: #2d2d35;
+	font-family: Ovo;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 30.02px;
+	text-align: center;
+}
+
+.quotes_add{
+    text-align: center;
+    margin-top: 17.5px;
+}
+	.quotes_add button{
+		width: 224px;
+		height: 43px;
+		border-radius: 3px;
+		background-color: #fff;
+		border: 1px solid #da6f5b;
+		color: #da6f5b;
+		font-family: Karla;
+		font-size: 16px;
+		font-weight: 400;
+		cursor: pointer;
+		transition: background .5s;
+	}
+	.quotes_add button:hover{
+		background-color: #da6f5b;
+		color: #fff;
+	}
+
+	@media (min-width: 321px) and (max-width: 480px){
+		section{
+			width: 100%;
+			height: 100vh;
+			background: url("../img/bg.png") center no-repeat;
+		}
+		.menu{
+			width: 100%;
+		}
+	}
+
+
+	@media (min-width: 481px) and (max-width: 767px){
+		section{
+			width: 100%;
+			height: 100vh;
+			background: url("../img/bg.png") center no-repeat;
+		}
+		.menu{
+			width: 100%;
+		}
+		
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+
+		section{
+			width: 100%;
+			height: 100vh;
+			background: url("../img/bg.png") center no-repeat;
+		}
+		.menu{
+			width: 100%;
+		}
+		
+}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		section{
+			width: 100%;
+			height: 100vh;
+			background: url("../img/bg.png") center no-repeat;
+		}
+		.menu{
+			width: 100%;
+		}
+		
+	}
+	@media (min-width: 1200px) {
+		section{
+			width: 100%;
+			height: 100vh;
+			background: url("../img/bg.png") center no-repeat;
+		}
+		.menu{
+			width: 100%;
+		}
+
+		.order_box{
+			max-width: 1130px;
+			width: 1130px;
+			height: 241px;
+		}
+		.order_box_inputs{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.item {
+			padding:  0 19px;
+		}
+		#order_box_select, .btn_order, #order_box_email{
+			text-align: center;
+			margin-top: 18px;
+		}
+		input, select{
+			width: 324px;
+			height: 57px;
+		}
+		select.select{
+		  background-position: 283px 21px;
+		}
+		.btn_order input{
+			width: 224px;
+			height: 43px;
+			margin-top: 10px;
+		}
+		.order_box h3{
+			font-size: 24px;
+		}
+		#arrow_down img{
+			width: 24px !important;
+			height: 32px !important;
+		}
+		#arrow_down{
+			margin-top: 22px;
+		}
+		.order_box{
+			margin-top: 13px;
+		}
+		#header_subtitle{
+			width: 492px;
+			height: 48px;
+			
+		}
+		.header_title{
+			width: 734px;
+		}
+		.header_title h1{
+			font-size: 72px !important;
+		}
+		.logo img{
+			height: 36px;
+			width: 119px;
+		}
+		.header{
+			display: flex;
+			justify-content: space-around;
+		}
+		.header_menu{
+			display: flex;
+			align-items: center;
+			margin-left: 100px;
+		}
+
+			a{
+				text-decoration: none;
+				margin: 0 10px;
+				color: #ffffff;
+				font-family: Karla;
+				font-size: 18px;
+				font-weight: 400;
+				padding: 5px 11px;
+			}
+
+			a:hover{
+				background-color: #2d2d35;
+			}
+
+		#burger{
+			display: none;
+		}
+		
+		.header_menu_button{
+			width: 200px;
+			height: 43px;
+			font-size: 18px;
+			display: block;
+			margin-right: 30px;
+		}
+		.quotes_title{
+			margin-bottom: 22px;
+			margin-top: 82px;
+		}
+		.quotes_title h3{
+			font-size: 48px;
+		}
+		.el_text h2{
+			font-family: Karla;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		.el_subtext{
+			font-size: 18px;
+			text-align: left;
+			padding-top: 20px;
+			margin-left: 20px;
+		}
+		.quotes_func{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		.quotes_number{
+			margin-top: 30px;
+		}
+		
+	}
+}
